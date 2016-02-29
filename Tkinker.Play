@@ -1,0 +1,26 @@
+
+from tkinter import *
+
+root = Tk()
+frame = Frame(root)
+frame.pack()
+
+bottomframe = Frame(root)
+bottomframe.pack( side = BOTTOM )
+
+redbutton = Button(frame, text ="Red", fg = "red")
+redbutton.pack( fill = X)
+
+greenbutton = Button(frame, text="Green", fg ="green", cursor="spraycan")
+greenbutton.pack( fill = X)
+
+bluebutton = Button(frame, text="Click Me", fg ="blue", bg="green", width="15")
+bluebutton.pack( fill = X)
+
+checkbutton = Checkbutton(frame, text="Check if you like me", cursor="heart", activeforeground="blue")
+checkbutton.pack( side = TOP)
+
+checkbutton2 = Checkbutton(frame, text="Check if you don't", cursor="pirate" )
+checkbutton2.pack( side = BOTTOM)
+
+root.mainloop()

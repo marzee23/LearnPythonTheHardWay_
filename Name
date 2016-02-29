@@ -1,0 +1,25 @@
+print ('What is your name?')
+
+myName = input()
+
+print ("Hello, " + myName)
+
+condition = input("How are you doing today? Good or bad?:  ").lower()
+
+if condition == "good":
+	print ("That's wonderful to hear!")
+else: 
+	print ("That's too bad.")
+
+choice = input("Want to play a game?:  ").lower()
+
+if choice == "yes":
+	mathproblem1 = input("Let's play a math game! What's the square root of 100?:  ").lower()
+else: 
+	print ("You suck and you're boring.")
+	
+if mathproblem1 == "10":
+	print ("Totally Tubular Dude... are you a math wizard or something?!")
+else:
+	print ("Wow, what a shitty answer.")
+	
